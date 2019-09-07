@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Tap Food!</title>
+  <link rel="stylesheet" href="resources/assets/bootstrap.min.css">
+  <link rel="stylesheet" href="resources/assets/bootstrap-rtl.min.css">
+  <link rel="stylesheet" href="resources/assets/styles.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">تپ فوود!</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#" id="foods-page">منوی غذا<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" id="orders-page">سفارش‌ها</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="جستجو..." aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" disabled>جستجو</button>
+    </form>
+  </div>
+</nav>
+
+<div id="content" class="" style="margin: 20px">
+  <div class="foods">
+  </div>
+  <div class="orders" style="display: none;">
+
+  </div>
+  <div id="submitOrderBox">
+    <div class="text-center">
+      <button id='submitOrder' class="btn btn-success btn-lg  pull-left" disabled>ثبت سفارش</button>
+      <div id="orderDoneAlert" class="alert alert-success fade show" role="alert" style="margin: 10px; display: none;">
+        سفارش با موفقیت ثبت شد.
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Insert this line above script imports  -->
+<script>if (typeof module === 'object') {
+  window.module = module;
+  module = undefined;
+}</script>
+
+<script src="./resources/assets/jquery.min.js"></script>
+<script src="./resources/assets/bootstrap.min.js"></script>
+<script>
+  require('./app');
+</script>
+
+<!-- Insert this line after script imports -->
+<script>if (window.module) module = window.module;</script>
+</body>
+</html>

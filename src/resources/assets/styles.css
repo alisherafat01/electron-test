@@ -1,0 +1,32 @@
+html, body {
+    height: 100%;
+}
+
+@font-face {
+    font-family: IranSans;
+    src: url('./IRANSansWeb.ttf');
+}
+
+body {
+    font-family: IranSans !important;
+}
+
+.product-image {
+    width: 150px;
+    height: 150px;
+}
+
+.food-title {
+    display: inline-block;
+    font-weight: bold;
+
+}
+
+.food-description {
+    display: inline-block;
+    color: #555;
+}
+
+.food-data {
+    margin-right: 10px;
+}

@@ -1,0 +1,28 @@
+{
+  "name": "tapfood-electron",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "build": "electron-builder -wl",
+    "watch": "nodemon --exec 'electron .'"
+  },
+  "author": "ali sherafatian",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^6.0.7",
+    "electron-builder": "^21.2.0",
+    "electron-rebuild": "^1.8.6"
+  },
+  "dependencies": {
+    "init": "^0.1.2",
+    "nodemon": "^1.19.1",
+    "sequelize-cli": "^5.5.1",
+    "dotenv": "^8.1.0",
+    "electron-window-state": "^5.0.3",
+    "sequelize": "^5.18.0",
+    "sqlite3": "^4.1.0"
+  }
+}
